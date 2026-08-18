@@ -1,4 +1,4 @@
-# Site do grupo de computação quântica
+# Q·LAB — Informação e Computação Quântica
 
 Site estático em HTML, CSS, JavaScript e Bootstrap. Abra `index.html` ou publique a pasta em qualquer hospedagem estática.
 
