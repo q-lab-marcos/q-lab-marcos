@@ -3,6 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
   <meta name="description" content="Grupo de pesquisa em computação quântica.">
   <title>Q·Lab — Grupo de Computação Quântica</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,17 +42,34 @@
         <div class="row min-vh-100 align-items-center py-5">
           <div class="col-lg-8 py-5">
             <p class="eyebrow reveal">GRUPO DE PESQUISA · [INSTITUIÇÃO]</p>
-            <h1 class="display-title reveal">Investigando o futuro<br><span>quântico</span> da computação.</h1>
-            <p class="hero-copy reveal">Pesquisa de excelência em informação quântica, algoritmos e tecnologias que ampliam as fronteiras do possível.</p>
+            <h1 class="display-title reveal">Ciência na fronteira da<br><span>informação quântica.</span></h1>
+            <p class="hero-copy reveal">Investigamos os fundamentos da informação e da computação quântica, formando pesquisadores e desenvolvendo conhecimento para novas tecnologias.</p>
             <div class="d-flex flex-wrap gap-3 reveal">
               <a class="btn btn-primary" href="#pesquisa">Conheça nossa pesquisa <span aria-hidden="true">→</span></a>
               <a class="btn btn-outline-light" href="#pessoas">Nossa equipe</a>
             </div>
-          </div>
-          <div class="col-lg-4 d-none d-lg-flex justify-content-center" aria-hidden="true">
-            <div class="atom-visual">
-              <span class="nucleus"></span><span class="orbit orbit-a"><i></i></span><span class="orbit orbit-b"><i></i></span><span class="orbit orbit-c"><i></i></span>
+            <div class="hero-institutions reveal" aria-label="Instituições vinculadas">
+              <div class="group-identity" aria-label="Q Lab — Informação e Computação Quântica">
+                <span class="group-logo-mark">Q</span>
+                <span><strong>Q·LAB</strong><small>INFORMAÇÃO & COMPUTAÇÃO QUÂNTICA</small></span>
+              </div>
+              <span class="institution-divider" aria-hidden="true"></span>
+              <a href="https://portal.ifi.unicamp.br/" target="_blank" rel="noopener" aria-label="Instituto de Física Gleb Wataghin — IFGW">
+                <img class="ifgw-logo" src="assets/logos/ifgw.png" alt="IFGW — Instituto de Física Gleb Wataghin">
+              </a>
+              <a href="https://www.unicamp.br/" target="_blank" rel="noopener" aria-label="Universidade Estadual de Campinas — Unicamp">
+                <img class="unicamp-logo" src="assets/logos/unicamp.png" alt="Unicamp">
+              </a>
             </div>
+          </div>
+          <div class="col-lg-4 mt-5 mt-lg-0">
+            <figure class="group-photo-hero">
+              <img id="group-photo" src="assets/logos/grupo.jpeg" alt="Integrantes do Q·Lab">
+              <div id="group-photo-placeholder" class="group-photo-placeholder" aria-label="Espaço reservado para a foto do grupo" hidden>
+                <span>FOTO DO GRUPO</span><small>Adicione a imagem em config.js</small>
+              </div>
+              <figcaption><span>Q·LAB</span> Informação & computação quântica</figcaption>
+            </figure>
           </div>
         </div>
       </div>
@@ -63,10 +83,11 @@
           <div class="col-lg-7 offset-lg-1">
             <p class="lead-copy">O [Nome do Grupo] reúne pesquisadores dedicados a compreender e desenvolver novas formas de processar informação usando os princípios da mecânica quântica.</p>
             <p class="muted-copy">Insira aqui uma apresentação breve do grupo, sua história, vínculo institucional e principais contribuições. Este espaço foi pensado para comunicar impacto sem perder a clareza.</p>
-            <div class="stats-grid">
-              <div><strong data-count="12">12</strong><span>Pesquisadores</span></div>
-              <div><strong data-count="24">24</strong><span>Publicações</span></div>
-              <div><strong data-count="6">6</strong><span>Projetos ativos</span></div>
+            <div class="stats-grid" aria-label="Indicadores do grupo">
+              <div><strong id="stat-staff">—</strong><span>Professores e pós-docs</span></div>
+              <div><strong id="stat-students">—</strong><span>Estudantes atuais</span></div>
+              <div><strong id="stat-publications">—</strong><span>Publicações</span></div>
+              <div><strong id="stat-projects">—</strong><span>Projetos ativos</span></div>
             </div>
           </div>
         </div>
@@ -84,11 +105,11 @@
       <div class="container">
         <div class="section-heading"><div><p class="section-index">03 / PESSOAS</p><h2>Quem faz a pesquisa</h2></div><p>Uma equipe interdisciplinar<br>movida por curiosidade.</p></div>
         <div class="people-block">
-          <div class="d-flex align-items-center justify-content-between mb-4"><h3>Professores & pós-docs</h3><span class="data-status" id="staff-status"></span></div>
+          <div class="people-heading mb-4"><h3>Professores & pós-docs</h3><div><span class="data-status" id="staff-status"></span><a class="former-link" href="anteriores.html#professores">Ver anteriores →</a></div></div>
           <div id="staff-grid" class="row g-4" aria-live="polite"></div>
         </div>
         <div class="people-block mt-5 pt-4">
-          <div class="d-flex align-items-center justify-content-between mb-4"><h3>Estudantes</h3><span class="data-status" id="students-status"></span></div>
+          <div class="people-heading mb-4"><h3>Estudantes</h3><div><span class="data-status" id="students-status"></span><a class="former-link" href="anteriores.html#estudantes">Ver anteriores →</a></div></div>
           <div id="students-grid" class="row g-4" aria-live="polite"></div>
         </div>
       </div>
