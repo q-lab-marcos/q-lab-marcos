@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Grupo de pesquisa em computação quântica.">
+  <title>Q·Lab — Grupo de Computação Quântica</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top" aria-label="Navegação principal">
+    <div class="container">
+      <a class="navbar-brand" href="#inicio" aria-label="Q Lab - início">
+        <span class="brand-mark" aria-hidden="true">Q</span><span>Q·LAB</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Abrir menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="#pesquisa">Pesquisa</a></li>
+          <li class="nav-item"><a class="nav-link" href="#pessoas">Pessoas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#publicacoes">Publicações</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="quantum-grid" aria-hidden="true"></div>
+      <div class="container position-relative">
+        <div class="row min-vh-100 align-items-center py-5">
+          <div class="col-lg-8 py-5">
+            <p class="eyebrow reveal">GRUPO DE PESQUISA · [INSTITUIÇÃO]</p>
+            <h1 class="display-title reveal">Investigando o futuro<br><span>quântico</span> da computação.</h1>
+            <p class="hero-copy reveal">Pesquisa de excelência em informação quântica, algoritmos e tecnologias que ampliam as fronteiras do possível.</p>
+            <div class="d-flex flex-wrap gap-3 reveal">
+              <a class="btn btn-primary" href="#pesquisa">Conheça nossa pesquisa <span aria-hidden="true">→</span></a>
+              <a class="btn btn-outline-light" href="#pessoas">Nossa equipe</a>
+            </div>
+          </div>
+          <div class="col-lg-4 d-none d-lg-flex justify-content-center" aria-hidden="true">
+            <div class="atom-visual">
+              <span class="nucleus"></span><span class="orbit orbit-a"><i></i></span><span class="orbit orbit-b"><i></i></span><span class="orbit orbit-c"><i></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#sobre" class="scroll-cue" aria-label="Ir para a próxima seção">SCROLL <span>↓</span></a>
+    </section>
+
+    <section class="section" id="sobre">
+      <div class="container">
+        <div class="row g-5 align-items-start">
+          <div class="col-lg-4"><p class="section-index">01 / SOBRE</p><h2>Ciência na fronteira do conhecimento.</h2></div>
+          <div class="col-lg-7 offset-lg-1">
+            <p class="lead-copy">O [Nome do Grupo] reúne pesquisadores dedicados a compreender e desenvolver novas formas de processar informação usando os princípios da mecânica quântica.</p>
+            <p class="muted-copy">Insira aqui uma apresentação breve do grupo, sua história, vínculo institucional e principais contribuições. Este espaço foi pensado para comunicar impacto sem perder a clareza.</p>
+            <div class="stats-grid">
+              <div><strong data-count="12">12</strong><span>Pesquisadores</span></div>
+              <div><strong data-count="24">24</strong><span>Publicações</span></div>
+              <div><strong data-count="6">6</strong><span>Projetos ativos</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="pesquisa">
+      <div class="container">
+        <div class="section-heading"><div><p class="section-index">02 / PESQUISA</p><h2>Linhas de pesquisa</h2></div><p>Problemas fundamentais.<br>Soluções de longo alcance.</p></div>
+        <div id="projects-grid" class="row g-3" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="section" id="pessoas">
+      <div class="container">
+        <div class="section-heading"><div><p class="section-index">03 / PESSOAS</p><h2>Quem faz a pesquisa</h2></div><p>Uma equipe interdisciplinar<br>movida por curiosidade.</p></div>
+        <div class="people-block">
+          <div class="d-flex align-items-center justify-content-between mb-4"><h3>Professores & pós-docs</h3><span class="data-status" id="staff-status"></span></div>
+          <div id="staff-grid" class="row g-4" aria-live="polite"></div>
+        </div>
+        <div class="people-block mt-5 pt-4">
+          <div class="d-flex align-items-center justify-content-between mb-4"><h3>Estudantes</h3><span class="data-status" id="students-status"></span></div>
+          <div id="students-grid" class="row g-4" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="publicacoes">
+      <div class="container">
+        <div class="section-heading"><div><p class="section-index">04 / PUBLICAÇÕES</p><h2>Pesquisa publicada</h2></div><p>Resultados que atravessam<br>teoria e aplicação.</p></div>
+        <div id="articles-list" class="publications" aria-live="polite"></div>
+        <a class="text-link" href="#" id="all-publications">Ver todas as publicações <span>↗</span></a>
+      </div>
+    </section>
+
+    <section class="section contact" id="contato">
+      <div class="container">
+        <div class="row g-5 align-items-end">
+          <div class="col-lg-7"><p class="section-index">05 / CONTATO</p><h2>Vamos conversar sobre<br><span>o que vem depois?</span></h2></div>
+          <div class="col-lg-4 offset-lg-1 contact-details">
+            <p><span>E-mail</span><a href="mailto:grupo@universidade.br">grupo@universidade.br</a></p>
+            <p><span>Endereço</span>[Departamento / Instituto]<br>[Universidade]<br>[Cidade — UF]</p>
+            <div class="socials"><a href="#">Lattes ↗</a><a href="#">GitHub ↗</a><a href="#">LinkedIn ↗</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="container d-flex flex-column flex-md-row justify-content-between gap-2"><span>© <span id="year"></span> Q·LAB</span><span>Computação quântica · [Instituição]</span></div></footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
