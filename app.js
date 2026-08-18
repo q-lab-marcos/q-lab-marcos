@@ -94,3 +94,5 @@ document.addEventListener("DOMContentLoaded", () => {
   hydrate("students", rows => renderPeople("students-grid", rows), "students-status"); hydrate("articles", renderArticles);
   document.querySelectorAll(".navbar .nav-link").forEach(link => link.addEventListener("click", () => bootstrap.Collapse.getInstance(document.getElementById("navbarMenu"))?.hide()));
 });
+
+
